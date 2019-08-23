@@ -1034,7 +1034,8 @@ class Domain(db.Model):
             account_id = None
         # add new domain
         d = Domain()
-        d.name = domain['name'].rstrip('.')
+        domain_name = domain['name'].rstrip('.')
+        d.name = domain_name
         d.master = str(domain['masters'])
         d.type = domain['kind']
         d.serial = domain['serial']
