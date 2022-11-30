@@ -1,0 +1,5 @@
+paths-ignore:
+  - .git
+  - upload
+  - flask
+  - node_modules
